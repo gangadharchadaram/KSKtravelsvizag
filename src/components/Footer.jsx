@@ -52,7 +52,7 @@ import logo from '@/components/assets/kskLogo.PNG'
                   </li>
                   <li className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                    <a href="tel:+919876543210" className="text-sm hover:text-cyan-400 transition-colors">+91 98765 43210</a>
+                    <a href="tel:+919876543210" className="text-sm hover:text-cyan-400 transition-colors">+919948357755</a>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />

@@ -8,15 +8,17 @@ import image2 from '@/components/assets/image2.jpg';
 import image3 from '@/components/assets/image3.jpg';
 import image4 from '@/components/assets/image4.webp';
 import image5 from '@/components/assets/image5.png';
+import image6 from '@/components/assets/charminar.jpg';
+
 
 const allPackages = [
   {
     id: 1,
     name: 'Araku Valley Adventure',
-    price: '₹4,999 / 10 hrs',
+    price: '₹4,999',
     rating: 4.8,
     reviews: 245,
-    highlights: ['Borra Caves', 'Katika Waterfalls', 'Ananthagiri', 'Adventure Park', 'Wooden Bridge', 'Tribal Museum'],
+    highlights: ['Borra Caves', 'Katika Waterfalls', 'Ananthagiri', 'Adventure Park', 'Wooden Bridge', 'Tribal Museum', 'Golkonda View', 'Coffee Musuem', 'Padmavathi Gardens', 'Giri Grama Darshini', 'Rana Jileda Waterfalls', 'Chaparai Waterfalls'],
     includes: ['Car + Driver + Fuel', 'Guide'],
     description: 'Experience the misty hills and coffee estates of Araku Valley',
     image: image1,
@@ -24,29 +26,29 @@ const allPackages = [
   {
     id: 2,
     name: 'Vizag City Tour',
-    price: '₹2,499 / 8 hrs',
+    price: '₹2,499',
     rating: 4.6,
     reviews: 389,
-    highlights: ['RK Beach', 'Submarine Museum', 'Kailasagiri', 'Rushikonda Beach', 'Zoo Park'],
+    highlights: ['RK Beach', 'Submarine Museum', 'Kailasagiri', 'Rushikonda Beach', 'Zoo Park', 'Vuda Park', 'Bheemili Beach'],
     includes: ['Car + Driver + Fuel', 'Guide'],
     description: 'Explore the best of Visakhapatnam in a day.',
     image: image2,
   },
   {
     id: 3,
-    name: 'Srikakulam Tour',
-    price: '₹4,999 / 12 hrs',
-    rating: 4.7,
-    reviews: 312,
-    highlights: ['Arasavalli Temple', 'Srikurmam', 'Srimukhalingham'],
+    name: 'Hyderabad Tour',
+    price: '₹4,999',
+    rating: 4.5,
+    reviews: 267,
+    highlights: ['Charminar', 'Golkonda Fort', 'Pedamma Thalli Temple', 'Malls', 'Hussain Sagar View', 'Cable Bridge'],
     includes: ['Car + Driver + Fuel', 'Guide'],
-    description: 'Discover ancient temples and heritage sites in Srikakulam.',
-    image: image3,
+    description: 'Explore Malls and scenic viewpoints of Hyderabad.',
+    image: image6,
   },
   {
     id: 4,
     name: 'Lambasingi Winter Escape',
-    price: '₹4,999 / 10 hrs',
+    price: '₹4,999',
     rating: 4.9,
     reviews: 178,
     highlights: ['Kashmir of AP', 'Tajangi Reservoir', 'Strawberry Gardens', 'Viewpoint'],
@@ -57,13 +59,24 @@ const allPackages = [
   {
     id: 5,
     name: 'Paderu Tour',
-    price: '₹4,999 / 9 hrs',
+    price: '₹4,999',
     rating: 4.5,
     reviews: 267,
     highlights: ['Vanjangi View Point', 'Taraabu Waterfalls', 'Kothapally Waterfalls'],
     includes: ['Car + Driver + Fuel', 'Guide'],
     description: 'Explore waterfalls and scenic viewpoints of Paderu.',
     image: image4,
+  },
+    {
+    id: 6,
+    name: 'Srikakulam Tour',
+    price: '₹4,999',
+    rating: 4.7,
+    reviews: 312,
+    highlights: ['Arasavalli Temple', 'Srikurmam', 'Srimukhalingham'],
+    includes: ['Car + Driver + Fuel', 'Guide'],
+    description: 'Discover ancient temples and heritage sites in Srikakulam.',
+    image: image3,
   },
 ];
 
