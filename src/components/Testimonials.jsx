@@ -48,9 +48,9 @@ import React from 'react';
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <span className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full text-sm font-semibold inline-block mb-4">
+              {/* <span className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full text-sm font-semibold inline-block mb-4">
                 Happy Customers
-              </span>
+              </span> */}
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
                 Voices of <span className="text-gradient">Our Travelers</span>
               </h2>

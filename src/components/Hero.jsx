@@ -115,6 +115,18 @@ import React from 'react';
                       <p className="text-sm text-gray-600">Available Service</p>
                     </div>
                   </div>
+                   {/* <Button
+            asChild
+            size="lg"
+            className="gradient-bg hover:bg-[#FBC02D] text-black font-semibold"
+          >
+              <a
+  href="tel:+919948357755"
+  className="inline-flex w-full justify-center items-center px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition font-semibold text-base shadow"
+>
+  Contact us
+</a>
+          </Button> */}
                 </motion.div>
               </motion.div>
             </div>

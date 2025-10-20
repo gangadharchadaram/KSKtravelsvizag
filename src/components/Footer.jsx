@@ -1,5 +1,7 @@
 import React from 'react';
-    import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import logo from '@/components/assets/kskLogo.PNG'
+
 
     const Footer = () => {
       const scrollToSection = (id) => {
@@ -21,9 +23,9 @@ import React from 'react';
             <div className="grid md:grid-cols-4 gap-8 mb-12">
               <div className="space-y-4">
                 <img 
-                  src="https://horizons-cdn.hostinger.com/3b2f7e3d-caf2-4f27-ad4d-b036b60c0915/36c22dc0a63f8cecbc2ba642eb5383d9.png" 
+                  src={logo} 
                   alt="KSK Travels Vizag" 
-                  className="h-16 w-auto"
+                  className="h-28 w-auto"
                 />
                 <p className="text-gray-300 text-sm">
                   Your trusted travel partner in Visakhapatnam. Experience the best of Vizag with our premium services.
