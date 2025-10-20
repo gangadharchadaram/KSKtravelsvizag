@@ -6,7 +6,13 @@ import car1 from '@/components/assets/swicth-hback.webp';
 import car2 from '@/components/assets/desire-1.jpg';
 import car3 from '@/components/assets/fronx.avif';
 import car4 from '@/components/assets/baleno.jpg';
-import car5 from '@/components/assets/ertiga.jpg';
+import car5 from '@/components/assets/amaze.webp';
+import car6 from '@/components/assets/ertiga.jpg';
+import car7 from '@/components/assets/crysta-2.avif';
+import car8 from '@/components/assets/tavera.jpg';
+import car9 from '@/components/assets/force.jpg';
+import car10 from '@/components/assets/force-17.webp';
+
 
 
 // Car Data
@@ -55,45 +61,101 @@ const cars = [
   },
   {
     id: 4,
-    name: 'Mahindra Scorpio',
+    name: 'Baleno',
+    category: 'Sedan',
+    seats: 4,
+    luggage: 4,
+    baseRate: '₹3,000',
+    package: '10 Hours / 100 KM',
+    extraKm: '₹13/km',
+    extraHr: '₹250/hr',
+    features: ['AC', 'Premium Sound', 'GPS', 'Leather Seats'],
+    description: 'Luxury comfort for business travel',
+    image: car4,
+  },
+  {
+    id: 5,
+    name: 'Honda Amaze',
+    category: 'Sedan',
+    seats: 4,
+    luggage: 4,
+    baseRate: '₹3,000',
+    package: '10 Hours / 100 KM',
+    extraKm: '₹13/km',
+    extraHr: '₹250/hr',
+    features: ['AC', 'Premium Sound', 'GPS', 'Leather Seats'],
+    description: 'Luxury comfort for business travel',
+    image: car5,
+  },
+  {
+    id: 6,
+    name: 'Ertiga',
     category: 'SUV',
-    seats: 7,
+    seats: 6,
     luggage: 5,
-    baseRate: '₹4,000',
+    baseRate: '₹3,500',
     package: '10 Hours / 100 KM',
     extraKm: '₹14/km',
     extraHr: '₹300/hr',
     features: ['AC', '4WD', 'GPS', 'Rugged'],
     description: 'Adventure-ready for hill stations',
-    image: car4,
+    image: car6,
   },
   {
-    id: 5,
-    name: 'Hyundai Creta',
+    id: 7,
+    name: 'Innova Crysta',
     category: 'SUV',
-    seats: 5,
+    seats: 7,
     luggage: 3,
-    baseRate: '₹3,800',
+    baseRate: '₹4,500',
     package: '10 Hours / 100 KM',
     extraKm: '₹14/km',
     extraHr: '₹250/hr',
     features: ['AC', 'Sunroof', 'GPS', 'Premium'],
     description: 'Modern SUV with premium features',
-    image: car5,
+    image: car7,
+  },
+    {
+    id: 8,
+    name: 'Tavera',
+    category: 'SUV',
+    seats: 7,
+    luggage: 3,
+    baseRate: '₹4,500',
+    package: '10 Hours / 100 KM',
+    extraKm: '₹14/km',
+    extraHr: '₹250/hr',
+    features: ['AC', 'Sunroof', 'GPS', 'Premium'],
+    description: 'Modern SUV with premium features',
+    image: car8,
   },
   {
-    id: 6,
-    name: 'Toyota Fortuner',
-    category: 'Premium SUV',
-    seats: 7,
+    id: 9,
+    name: '12 Seater(MINI VAN)',
+    category: 'Bus',
+    seats: 12,
     luggage: 5,
-    baseRate: '₹6,500',
+    baseRate: '₹6,000',
     package: '10 Hours / 100 KM',
     extraKm: '₹16/km',
     extraHr: '₹400/hr',
     features: ['AC', 'Leather', 'GPS', '4WD', 'Luxury'],
     description: 'Ultimate luxury for special occasions',
-    image: 'https://images.unsplash.com/photo-1687758265380-4538899a1b3b',
+    image: car9,
+  },
+    {
+    id: 10,
+    name: '17 Seater(MINI Bus)',
+    category: 'Bus',
+    seats: 17,
+    luggage: 5,
+    baseRate: '₹6,000',
+    package: '10 Hours / 100 KM',
+    extraKm: '₹16/km',
+    extraHr: '₹400/hr',
+    features: ['AC', 'Leather', 'GPS', '4WD', 'Luxury'],
+    description: 'Ultimate luxury for special occasions',
+    image: car10,
   },
 ];
 
@@ -115,13 +177,15 @@ const FleetBanner = () => (
 );
 
 const Fleet = () => {
-  const phoneNumber = '+919876543210';
-  const whatsappNumber = '+918142541365';
+  const phoneNumber = '+919948357755';
+  const whatsappNumber = '+919948357755';
 
   const groupedCars = {
     'Hatchback Cars': cars.filter((car) => car.category === 'H-Back'),
     'Sedan Cars': cars.filter((car) => car.category === 'Sedan'),
     'SUV Cars': cars.filter((car) => car.category.includes('SUV')),
+        'MINI Bus': cars.filter((car) => car.category.includes('Bus')),
+
   };
 
   return (

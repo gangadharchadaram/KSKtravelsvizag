@@ -3,14 +3,15 @@ import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import image1 from '@/components/assets/KSKTravels.png';
-import image2 from '@/components/assets/KSKTravels1.png'
-import image3 from '@/components/assets/services3.jpg';
+import image2 from '@/components/assets/KSKTravels1.png';
+import image3 from '@/components/assets/KSKTravels2.png';
 import image4 from '@/components/assets/services3.jpg';
-import image5 from '@/components/assets/image4.webp';
+import image5 from '@/components/assets/services3.jpg';
+import image6 from '@/components/assets/image4.webp';
 
 const OurServices = () => {
   // Your WhatsApp number (without + or spaces)
-  const whatsappNumber = '919876543210'; // change this to your number
+  const whatsappNumber = '919948357755'; // change this to your number
 
   const services = [
     {
