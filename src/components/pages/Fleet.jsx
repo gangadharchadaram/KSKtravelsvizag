@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Users, Briefcase, Zap, Phone, MessageCircle } from 'lucide-react';
+import { Users, Briefcase, Zap, Phone, MessageCircle, Music } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import car1 from '@/components/assets/swicth-hback.webp';
 import car2 from '@/components/assets/desire-1.jpg';
@@ -10,8 +10,10 @@ import car5 from '@/components/assets/amaze.webp';
 import car6 from '@/components/assets/ertiga.jpg';
 import car7 from '@/components/assets/crysta-2.avif';
 import car8 from '@/components/assets/tavera.jpg';
-import car9 from '@/components/assets/force.jpg';
-import car10 from '@/components/assets/force-17.webp';
+import car9 from '@/components/assets/12seater.avif';
+import car10 from '@/components/assets/17seater.webp';
+import car11 from '@/components/assets/tiago.jpg';
+import car12 from '@/components/assets/wagonR.avif';
 
 
 
@@ -33,6 +35,34 @@ const cars = [
   },
   {
     id: 2,
+    name: 'Wagon R',
+    category: 'H-Back',
+    seats: 4,
+    luggage: 2,
+    baseRate: '₹2,500',
+    package: '10 Hours / 100 KM',
+    extraKm: '₹12/km',
+    extraHr: '₹150/hr',
+    features: ['AC', 'Music System', 'GPS'],
+    description: 'Perfect for city tours and short trips',
+    image: car12,
+  },
+  {
+    id: 3,
+    name: 'TATA Tiago',
+    category: 'H-Back',
+    seats: 4,
+    luggage: 2,
+    baseRate: '₹2,500',
+    package: '10 Hours / 100 KM',
+    extraKm: '₹12/km',
+    extraHr: '₹150/hr',
+    features: ['AC', 'Music System', 'GPS'],
+    description: 'Perfect for city tours and short trips',
+    image: car11,
+  },
+  {
+    id: 4,
     name: 'Swift Dzire',
     category: 'Sedan',
     seats: 4,
@@ -46,7 +76,7 @@ const cars = [
     image: car2,
   },
   {
-    id: 3,
+    id: 5,
     name: 'Fronx',
     category: 'Sedan',
     seats: 4,
@@ -60,7 +90,7 @@ const cars = [
     image: car3,
   },
   {
-    id: 4,
+    id: 6,
     name: 'Baleno',
     category: 'Sedan',
     seats: 4,
@@ -74,7 +104,7 @@ const cars = [
     image: car4,
   },
   {
-    id: 5,
+    id: 7,
     name: 'Honda Amaze',
     category: 'Sedan',
     seats: 4,
@@ -88,7 +118,7 @@ const cars = [
     image: car5,
   },
   {
-    id: 6,
+    id: 8,
     name: 'Ertiga',
     category: 'SUV',
     seats: 6,
@@ -102,11 +132,11 @@ const cars = [
     image: car6,
   },
   {
-    id: 7,
+    id: 9,
     name: 'Innova Crysta',
     category: 'SUV',
     seats: 7,
-    luggage: 3,
+    luggage: 5,
     baseRate: '₹4,500',
     package: '10 Hours / 100 KM',
     extraKm: '₹14/km',
@@ -116,11 +146,11 @@ const cars = [
     image: car7,
   },
     {
-    id: 8,
+    id: 10,
     name: 'Tavera',
     category: 'SUV',
-    seats: 7,
-    luggage: 3,
+    seats: 9,
+    luggage: 7,
     baseRate: '₹4,500',
     package: '10 Hours / 100 KM',
     extraKm: '₹14/km',
@@ -130,11 +160,11 @@ const cars = [
     image: car8,
   },
   {
-    id: 9,
-    name: '12 Seater(MINI VAN)',
+    id: 11,
+    name: '12 Seater',
     category: 'Bus',
     seats: 12,
-    luggage: 5,
+    luggage: 8,
     baseRate: '₹6,000',
     package: '10 Hours / 100 KM',
     extraKm: '₹16/km',
@@ -144,12 +174,12 @@ const cars = [
     image: car9,
   },
     {
-    id: 10,
-    name: '17 Seater(MINI Bus)',
+    id: 12,
+    name: '17 Seater',
     category: 'Bus',
     seats: 17,
-    luggage: 5,
-    baseRate: '₹6,000',
+    luggage: 13,
+    baseRate: '₹7,000',
     package: '10 Hours / 100 KM',
     extraKm: '₹16/km',
     extraHr: '₹400/hr',
@@ -184,7 +214,7 @@ const Fleet = () => {
     'Hatchback Cars': cars.filter((car) => car.category === 'H-Back'),
     'Sedan Cars': cars.filter((car) => car.category === 'Sedan'),
     'SUV Cars': cars.filter((car) => car.category.includes('SUV')),
-        'MINI Bus': cars.filter((car) => car.category.includes('Bus')),
+        'Tempo Traveller': cars.filter((car) => car.category.includes('Bus')),
 
   };
 
@@ -243,13 +273,16 @@ const Fleet = () => {
                       <span className="flex items-center gap-1">
                         <Zap className="w-4 h-4 text-cyan-600" /> AC
                       </span>
+                      <span className="flex items-center gap-1">
+                        <Music className="w-4 h-4 text-cyan-600" /> Music System
+                      </span>
                     </div>
 
                     <div className="text-lg font-semibold text-blue-600 mb-1">
                       {car.baseRate}
                     </div>
                     <p className="text-sm text-gray-500 mb-6">
-                      {car.package} • Extra: {car.extraKm} & {car.extraHr}
+                      {car.package} 
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-3">

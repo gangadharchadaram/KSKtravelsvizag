@@ -186,6 +186,87 @@ const OurServices = () => {
           </div>
         </section>
       ))}
+      {/* Out Station Cab Service Section */}
+<section className="relative py-20 bg-gradient-to-r from-blue-500 via-indigo-500 to-orange-500 overflow-hidden">
+  {/* Decorative gradient blurs */}
+  <div className="absolute top-20 left-10 w-96 h-96 bg-white/20 rounded-full blur-3xl opacity-40 animate-pulse" />
+  <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-400/30 rounded-full blur-3xl opacity-30 animate-pulse" />
+
+  <div className="relative z-10 text-center text-white px-6">
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-12 drop-shadow-lg">
+      Out Station <span className="text-yellow-300">Cab Service</span>
+    </h2>
+
+    <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      {[
+        {
+          route: 'VIZAG TO KAKINADA',
+          fare: 'Price Starts from 3000 INR',
+        },
+        {
+          route: 'VIZAG TO VIZIANAGARAM',
+          fare: 'Price Starts from 1500 INR',
+        },
+        {
+          route: 'VIZAG TO SRIKAKULAM',
+          fare: 'Price Starts from 2400 INR',
+        },
+        {
+          route: 'VIZAG TO RAJAHMUNDRY',
+          fare: 'Price Starts from 3500 INR',
+        },
+        {
+          route: 'VIZAG TO HYDERABAD',
+          fare: 'Price Starts from 10000 INR',
+        },
+        {
+          route: 'ANY OTHER OUTSTATION CABS',
+          fare: 'As Low As Possible',
+        },
+      ].map((cab, idx) => (
+        <motion.div
+          key={idx}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: idx * 0.1 }}
+          whileHover={{ scale: 1.05 }}
+          className="bg-white/15 backdrop-blur-lg rounded-3xl p-6 flex flex-col justify-between shadow-lg hover:shadow-2xl border border-white/20 transition-all duration-300"
+        >
+          {/* Taxi Icon */}
+          <div className="relative mx-auto mb-4">
+            <div className="absolute inset-0 blur-xl bg-yellow-300/50 rounded-full opacity-70 animate-pulse" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/743/743131.png"
+              alt="Taxi Icon"
+              className="w-20 h-20 mx-auto relative drop-shadow-lg"
+            />
+          </div>
+
+          {/* Content */}
+          <h3 className="text-lg font-bold text-white mb-2">
+            {cab.route} TAXI FARE (ONE WAY OR ROUND TRIP)
+          </h3>
+          <p className="text-yellow-100 mb-6 font-medium">{cab.fare}</p>
+
+          {/* Button */}
+          <Button
+            onClick={() =>
+              window.open(
+                `https://wa.me/919948357755?text=Hi, I’d like to enquire about ${cab.route} taxi fare.`,
+                '_blank'
+              )
+            }
+            className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold rounded-full px-5 py-2 mx-auto shadow-md"
+          >
+            Enquiry Now
+          </Button>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
