@@ -17,7 +17,7 @@ const OurServices = () => {
   const services = [
     {
       id: 1,
-      title: "Airport Taxi Service",
+      title: "Airport Taxi Service(starts from 800)",
       highlight: "Visakhapatnam",
       description:
         "KSK Travels offers reliable and punctual airport taxi service in Visakhapatnam. Whether you need a pickup from the airport or a drop-off for your flight, our dedicated airport transfer service ensures a smooth and hassle-free journey.",
@@ -164,7 +164,7 @@ const OurServices = () => {
                 <p className="text-gray-700">
                   or Call Us at{" "}
                   <span className="text-red-500 font-semibold">
-                    +91 98765 43210
+                    +91 99483 57755
                   </span>
                 </p>
               </div>
@@ -206,7 +206,7 @@ const OurServices = () => {
         },
         {
           route: 'VIZAG TO VIZIANAGARAM',
-          fare: 'Price Starts from 1500 INR',
+          fare: 'Price Starts from 1800 INR',
         },
         {
           route: 'VIZAG TO SRIKAKULAM',
@@ -260,8 +260,9 @@ const OurServices = () => {
             }
             className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold rounded-full px-5 py-2 mx-auto shadow-md"
           >
-            Enquiry Now
+            Book Now
           </Button>
+    
         </motion.div>
       ))}
     </div>

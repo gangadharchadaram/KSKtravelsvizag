@@ -67,7 +67,7 @@ import React from 'react';
 
                 <div className="flex flex-wrap gap-4 pt-6">
                   <Button
-                    onClick={onBookNow}
+                    onClick={() => document.getElementById('cars').scrollIntoView({ behavior: 'smooth' })}
                     size="lg"
                     className="bg-gradient-to-r from-cyan-500 via-blue-500 to-orange-500 hover:from-cyan-600 hover:via-blue-600 hover:to-orange-600 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
                   >

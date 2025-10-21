@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
 import logo from '@/components/assets/kskLogo.PNG'
 
 
@@ -53,10 +53,14 @@ import logo from '@/components/assets/kskLogo.PNG'
                   <li className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                     <a href="tel:+919876543210" className="text-sm hover:text-cyan-400 transition-colors">+919948357755</a>
+                    <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                    <a href="tel:+919876543210" className="text-sm hover:text-cyan-400 transition-colors">+919642217735</a>
+                  
                   </li>
+                   
                   <li className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                    <a href="mailto:info@ksktravels.com" className="text-sm hover:text-cyan-400 transition-colors">info@ksktravels.com</a>
+                    <a href="mailto:info@ksktravels.com" className="text-sm hover:text-cyan-400 transition-colors">krishvlogs23@gmail.com</a>
                   </li>
                 </ul>
               </div>
@@ -64,15 +68,13 @@ import logo from '@/components/assets/kskLogo.PNG'
               <div>
                 <h3 className="text-lg font-bold mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 bg-white/10 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors">
-                    <Facebook className="w-5 h-5" />
+                  <a href="https://www.youtube.com/@ksktravelvlogs-ci5up" target='_blank' className="w-10 h-10 bg-white/10 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors">
+                    <Youtube className="w-5 h-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-white/10 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors">
+                  <a href="https://www.instagram.com/ksk___travels_vizag?utm_source=qr&igsh=MnVtbzdkbjFxanc1" target='_blank' className="w-10 h-10 bg-white/10 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors">
                     <Instagram className="w-5 h-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-white/10 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors">
-                    <Twitter className="w-5 h-5" />
-                  </a>
+                  
                 </div>
                 <p className="text-gray-300 text-sm mt-4">
                   Available 24/7 for your travel needs
