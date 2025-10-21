@@ -8,6 +8,7 @@ import image3 from '@/components/assets/KSKTravels2.png';
 import image4 from '@/components/assets/services3.jpg';
 import image5 from '@/components/assets/services3.jpg';
 import image6 from '@/components/assets/image4.webp';
+import carpng from '@/components/assets/carpng.png'
 
 const OurServices = () => {
   // Your WhatsApp number (without + or spaces)
@@ -209,15 +210,15 @@ const OurServices = () => {
         },
         {
           route: 'VIZAG TO SRIKAKULAM',
-          fare: 'Price Starts from 2400 INR',
+          fare: 'Price Starts from 2500 INR',
         },
         {
           route: 'VIZAG TO RAJAHMUNDRY',
-          fare: 'Price Starts from 3500 INR',
+          fare: 'Price Starts from 4000 INR',
         },
         {
-          route: 'VIZAG TO HYDERABAD',
-          fare: 'Price Starts from 10000 INR',
+          route: 'VIZAG TO VIJAYAWADA',
+          fare: 'Price Starts from 7000 INR',
         },
         {
           route: 'ANY OTHER OUTSTATION CABS',
@@ -237,7 +238,7 @@ const OurServices = () => {
           <div className="relative mx-auto mb-4">
             <div className="absolute inset-0 blur-xl bg-yellow-300/50 rounded-full opacity-70 animate-pulse" />
             <img
-              src="https://cdn-icons-png.flaticon.com/512/743/743131.png"
+              src={carpng}
               alt="Taxi Icon"
               className="w-20 h-20 mx-auto relative drop-shadow-lg"
             />
