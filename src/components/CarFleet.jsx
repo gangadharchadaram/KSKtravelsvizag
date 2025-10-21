@@ -98,8 +98,8 @@ const allcars = [
 const CarFleet = ({isHomePage}) => {
     const cars = isHomePage ? allcars.slice(0, 3) : allcars;
 
-  const phoneNumber = '+919876543210'; // Replace with your number
-  const whatsappNumber = '+918142541365'; // Replace with your WhatsApp number
+  const phoneNumber = '+919948357755'; // Replace with your number
+  const whatsappNumber = '+919948357755'; // Replace with your WhatsApp number
 
   return (
     <section
