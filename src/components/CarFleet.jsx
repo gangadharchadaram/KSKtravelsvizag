@@ -199,10 +199,10 @@ const CarFleet = ({isHomePage}) => {
                   <div className="text-center sm:text-left mb-3">
                     <p className="text-3xl font-bold text-gradient">{car.baseRate}</p>
                     <p className="text-sm text-gray-600 font-medium">{car.package}</p>
-                    <p className="text-xs text-gray-500 mt-1">
+                    {/* <p className="text-xs text-gray-500 mt-1">
                       Extra: <span className="font-semibold">{car.extraKm}</span> &nbsp; | &nbsp;{' '}
                       <span className="font-semibold">{car.extraHr}</span>
-                    </p>
+                    </p> */}
                   </div>
 
                   {/* Buttons */}

@@ -137,7 +137,7 @@ const About = () => {
               </Button>
 
               <Button
-                onClick={() => window.open('https://wa.me/918106953256?text=Hi%20KSK%20Travels%2C%20I%27m%20interested%20in%20booking%20a%20trip!', '_blank')}
+                onClick={() => window.open('https://wa.me/919948357755?text=Hi%20KSK%20Travels%2C%20I%27m%20interested%20in%20booking%20a%20trip!', '_blank')}
                 size="lg"
                 variant="outline"
                 className="border-2 border-green-500 text-green-600 hover:bg-green-50 rounded-full px-8"
