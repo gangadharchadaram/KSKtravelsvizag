@@ -83,7 +83,7 @@ import logo from '@/components/assets/kskLogo.PNG'
             </div>
 
             <div className="border-t border-white/10 pt-8 text-center text-gray-400 text-sm">
-              <p>&copy; {new Date().getFullYear()} KSK Travels Vizag. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} KSK Travels Vizag. All rights reserved. Designed & Developed by <a href='https://transformoweb.online/'>T-Web</a></p>
             </div>
           </div>
         </footer>
