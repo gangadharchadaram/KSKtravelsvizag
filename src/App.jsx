@@ -14,11 +14,15 @@ import LocalSightseeing from './components/pages/OurServices';
 import CorporateTravel from './components/pages/OurServices';
 import OutstationTrips from './components/pages/OurServices';
 import OurServices from './components/pages/OurServices';
+import ScrollToTop from "@/components/ScrollToTop"; // adjust path if needed
+
 // import Contact from './pages/Contact';
 
 const App = () => {
   return (
     <Router>
+            <ScrollToTop />  
+
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
